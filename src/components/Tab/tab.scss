@@ -1,0 +1,9 @@
+@import 'sass-rem';
+@import 'assets/variables';
+
+.tab {
+  max-width: rem(500px);
+  margin: auto;
+  padding: rem(20px);
+  color: map-get($palette, font);
+}

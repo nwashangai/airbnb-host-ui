@@ -1,0 +1,20 @@
+@import 'sass-rem';
+@import './assets/variables';
+
+.App {
+  position: relative;
+  // background: map-get($palette, bg);
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  margin-right: 0;
+  margin-left: 0;
+  flex-wrap: wrap;
+}
+
+.col {
+  margin-right: auto;
+  margin-left: auto;
+}

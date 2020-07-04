@@ -1,0 +1,71 @@
+@import 'sass-rem';
+@import 'assets/variables';
+
+.step3 {
+  padding: rem(8px);
+  font-size: rem(19px);
+
+  &__amenities-wrap {
+    padding-top: rem(24px);
+    padding-bottom: rem(24px);
+    border-bottom: rem(1px) solid map-get($grey, 1600);
+  }
+
+  &__amenities-main {
+    vertical-align: middle;
+    display: inline-block;
+    width: 80%;
+  }
+
+  &__amenities-title,
+  &__amenities-description {
+    margin: 0;
+    font-size: rem(18px);
+    font-weight: 400;
+    color: map-get($palette, font);
+    overflow-wrap: break-word;
+  }
+
+  &__amenities-description {
+    margin-top: rem(8px);
+    font-size: rem(14px);
+  }
+
+  &__amenities-select {
+    vertical-align: middle;
+    display: inline-block;
+    width: 20%;
+  }
+
+  &__amenities-select-check {
+    float: right;
+  }
+
+  &__amenities-select-btn {
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($grey, 150);
+    width: rem(40px);
+    height: rem(40px);
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    box-shadow: transparent 0 0 0 rem(1px), transparent 0 0 0 rem(4px),
+      map-get($palette, transparent) 0 rem(2px) rem(4px);
+    cursor: pointer;
+    color: map-get($palette, select-color);
+    background-clip: padding-box;
+    border-image: initial;
+    outline: 0;
+    border-style: solid;
+    border-width: rem(1px);
+    border-color: map-get($palette, border-color);
+    transition: box-shadow 0.2s ease 0s;
+
+    &--checked {
+      background-color: map-get($palette, primary) !important;
+    }
+  }
+}

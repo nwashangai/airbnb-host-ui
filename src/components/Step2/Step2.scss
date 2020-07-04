@@ -1,0 +1,164 @@
+@import 'sass-rem';
+@import 'assets/variables';
+
+.step2 {
+  padding: rem(8px);
+  font-size: rem(19px);
+
+  &__title {
+    // margin-bottom: rem(5px);
+    padding: rem(20px) 0;
+    font-size: rem(27px);
+    font-weight: bold;
+  }
+
+  &__instruction {
+    margin-bottom: rem(32px);
+    font-size: rem(18px);
+    color: map-get($palette, font);
+
+    span {
+      line-height: rem(19px);
+    }
+  }
+
+  &__get-location-wrapper {
+    margin-top: rem(24px);
+    margin-bottom: rem(24px);
+  }
+
+  &__location-btn {
+    position: relative;
+    display: inline-block;
+    background: transparent;
+    width: 100%;
+    min-width: rem(71.1935px);
+    margin: 0;
+    padding: rem(12px) rem(24px);
+    border-radius: rem(4px);
+    font-size: rem(16px);
+    font-weight: 800;
+    line-height: rem(24px);
+    text-align: center;
+    text-decoration: none;
+    box-shadow: none;
+    cursor: pointer;
+    color: map-get($palette, primary);
+    letter-spacing: normal;
+    border-width: rem(2px);
+    border-style: solid;
+    border-color: map-get($palette, primary);
+  }
+
+  &__location-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__location-ico-wrap {
+    display: inline-flex;
+    margin-right: rem(12px);
+    margin-bottom: rem(-5px);
+    align-self: center;
+  }
+
+  &__location-text-wrap {
+    display: inline-flex;
+    align-self: center;
+  }
+
+  &__form-head {
+    position: relative;
+    width: 100%;
+    margin: rem(30px) 0;
+    border-bottom: rem(1px) solid map-get($grey, 1600);
+    text-align: center;
+  }
+
+  &__form-head-text {
+    position: absolute;
+    z-index: 10;
+    top: rem(-8px);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background-color: map-get($palette, pure);
+    width: fit-content;
+    margin: auto;
+    padding: 0 rem(5px);
+    font-size: rem(14px);
+    font-weight: bold;
+    color: map-get($grey, 2500);
+  }
+
+  &__input-wrap {
+    margin-bottom: rem(20px);
+  }
+
+  &__hint {
+    font-size: rem(13px);
+  }
+
+  &__location-loading {
+    position: relative;
+    margin-top: rem(-5px);
+
+    svg {
+      position: absolute;
+      top: rem(-3px);
+      left: 0;
+    }
+  }
+
+  .text-input-theme__form-control {
+    margin-bottom: rem(3px);
+    padding: rem(19px) rem(36px) rem(19px) rem(12px) !important;
+    font-size: rem(20px) !important;
+  }
+
+  label {
+    display: block;
+    padding-top: rem(9px);
+    padding-bottom: rem(8px);
+  }
+
+  .Dropdown-root {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    border-radius: rem(8px);
+    font-size: rem(16px);
+    font-weight: 400;
+    line-height: rem(20px);
+    box-shadow: map-get($palette, border-shadow) 0 0 0 rem(1px) inset;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+  }
+
+  .Dropdown-control {
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: rem(20px) rem(36px) rem(20px) rem(12px);
+    font-size: rem(19px);
+    border-style: none;
+    outline: none;
+  }
+
+  .Dropdown-arrow {
+    position: absolute;
+    top: 45%;
+    right: rem(10px);
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top: -ceil(2.5);
+    content: ' ';
+    border-color: map-get($palette, placeholder) transparent transparent;
+    border-style: solid;
+    border-width: rem(10px) rem(10px) 0;
+  }
+}

@@ -1,0 +1,60 @@
+@import 'sass-rem';
+@import 'assets/variables';
+
+.counter {
+  display: table;
+  width: rem(120px);
+
+  &__cell {
+    vertical-align: middle;
+    display: table-cell;
+  }
+
+  &__minus {
+    text-align: left;
+  }
+
+  &__count {
+    text-align: center;
+  }
+
+  &__plus {
+    text-align: right;
+  }
+
+  &__update {
+    position: relative;
+    display: inline-block;
+    background: transparent;
+    width: rem(32px);
+    height: rem(32px);
+    border-radius: 50%;
+    line-height: 1;
+    text-align: center;
+    box-shadow: none;
+    cursor: pointer;
+    touch-action: manipulation;
+    border-style: solid;
+    border-color: map-get($palette, primary);
+    border-width: 1px;
+  }
+
+  &__update-disabled {
+    border-color: map-get($palette, disabled);
+
+    &__update span {
+      font-size: rem(16px);
+      color: map-get($palette, disabled);
+    }
+  }
+
+  &__update span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    font-size: rem(16px);
+    color: map-get($palette, primary);
+    transform: translate(-50%, -50%);
+  }
+}

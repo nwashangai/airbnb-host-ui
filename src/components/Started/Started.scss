@@ -1,0 +1,37 @@
+@import 'sass-rem';
+@import 'assets/variables';
+
+.started {
+  max-width: rem(400px);
+  margin: auto;
+  color: map-get($palette, font);
+
+  &__wrapper {
+    padding: rem(20px);
+  }
+
+  &__intro {
+    margin-bottom: rem(30px);
+    font-size: rem(27px);
+  }
+
+  &__step {
+    margin-bottom: rem(15px);
+    font-weight: bolder;
+    color: map-get($palette, input);
+  }
+
+  &__description {
+    margin-bottom: rem(20px);
+    font-size: rem(27px);
+  }
+
+  &__dropdown {
+    margin-bottom: rem(10px);
+    font-size: rem(17px);
+  }
+
+  &__btn {
+    width: rem(110px) !important;
+  }
+}

@@ -1,0 +1,82 @@
+@import 'sass-rem';
+@import 'assets/variables';
+
+.toast {
+  position: relative;
+  display: none;
+  width: 100%;
+  margin-bottom: rem(5px);
+  box-sizing: border-box;
+  table-layout: fixed;
+
+  &--show {
+    display: table;
+  }
+
+  &__wrapper {
+    vertical-align: top;
+    display: table-cell;
+    background-color: map-get($palette, danger);
+    width: rem(48px);
+    height: 100%;
+    padding: rem(16px) 0 rem(16px) rem(12px);
+    border-radius: rem(8px) 0 0 rem(8px);
+    border-style: solid;
+    border-width: rem(2px) 0 rem(2px) rem(2px);
+    border-color: map-get($palette, danger);
+
+    &--success {
+      background-color: map-get($palette, success);
+    }
+  }
+
+  &__message-wrapper {
+    vertical-align: top;
+    display: table-cell;
+    width: 90%;
+    padding: rem(20px) rem(8px);
+    border-radius: 0 rem(8px) rem(8px) 0;
+    border-color: #ebebeb;
+    border-style: solid;
+    border-width: rem(2px) rem(2px) rem(2px) 0;
+  }
+
+  &__message-box {
+    display: table;
+    width: 100%;
+    border-spacing: 0;
+  }
+
+  &__message {
+    vertical-align: top;
+    display: table-cell;
+    width: 100%;
+    margin: 0;
+    font-size: rem(14px);
+    font-weight: 600;
+    line-height: 1.28571rem;
+    color: rgb(72, 72, 72);
+  }
+
+  &__close-wrapper {
+    vertical-align: middle;
+    display: table-cell;
+  }
+
+  &__close-container {
+    padding-top: rem(2px);
+    padding-right: rem(8px);
+    padding-left: rem(4px);
+  }
+
+  .cls-btn {
+    display: inline-block;
+    background-color: transparent;
+    margin: rem(-7px);
+    padding: rem(7px);
+    border-radius: 50%;
+    cursor: pointer;
+    border-width: 0;
+    outline: 0;
+  }
+}

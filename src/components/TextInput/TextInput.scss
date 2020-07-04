@@ -1,0 +1,66 @@
+@import 'sass-rem';
+@import 'assets/variables';
+
+.text-input-theme {
+  position: relative;
+  width: 100%;
+
+  &__label {
+    display: inline-block;
+    margin-bottom: rem(8px);
+  }
+
+  &__form-control {
+    display: block;
+    width: 100%;
+    height: calc(rem(24px) + rem(12px) + rem(2px));
+    margin-bottom: rem(15px);
+    padding: rem(5px) rem(12px);
+    border: rem(1.4px) solid map-get($palette, border-line);
+    border-radius: rem(1px);
+    font-size: rem(17px);
+    font-weight: 400;
+    line-height: 1.5;
+    color: map-get($palette, input);
+    background-clip: padding-box;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .is-valid,
+  .is-invalid {
+    background-size: rem(36px);
+    background-position: center right rem(9px);
+    background-repeat: no-repeat;
+    padding-right: rem(36px);
+    border: unset;
+  }
+
+  .is-valid {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-8 -5 17 17'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-color: map-get($palette, valid-overlay);
+  }
+
+  .is-invalid {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-10 -6 15 15'><path stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/><circle r='.5'/><circle cx='3' r='.5'/><circle cy='3' r='.5'/><circle cx='3' cy='3' r='.5'/></svg>");
+    background-color: map-get($palette, invalid-ovaylay);
+  }
+
+  .is-valid-feedback,
+  .is-invalid-feedback {
+    width: 100%;
+    margin-top: rem(4px);
+    font-size: 70%;
+  }
+
+  .is-valid-feedback {
+    color: map-get($palette, success);
+  }
+
+  .is-invalid-feedback {
+    color: map-get($palette, danger);
+  }
+
+  &__curved-border {
+    border-radius: rem(7px);
+  }
+}

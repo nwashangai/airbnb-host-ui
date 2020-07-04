@@ -1,0 +1,56 @@
+$palette: (
+  primary: #008489,
+  secondary: #ffaf30,
+  tertiary: #dce0e0,
+  danger: #fc642d,
+  success: #28a745,
+  input: #6c757d,
+  valid-overlay: #4d8af033,
+  invalid-ovaylay: #f0825f33,
+  placeholder: #8b8b8b,
+  bg: #f9fafb,
+  progress-bg: #edefed,
+  select-color: #222,
+  hover-bg: #f4f6f8,
+  border-line: #ccc,
+  input-border: #f0f2f5,
+  border-color: #00000014,
+  font: #484848,
+  pure: #fff,
+  dark: #000,
+  disabled: #0084894d,
+  transparent: #0000002e
+);
+
+$grey: (
+  100: #fff,
+  150: #f2f2f2,
+  200: #aaa,
+  300: #d4d4d4,
+  400: #bcbcbc,
+  450: #eff4f7,
+  500: #999,
+  600: #838383,
+  700: #333e44,
+  800: #323c47,
+  900: #e0e0e0,
+  950: #e6e6e6,
+  1000: #d6dee4,
+  1100: #f2f4f9,
+  1200: #f8f8f8,
+  1300: #c6c6c6,
+  1400: #777,
+  1500: #4f4f4f,
+  1600: #e4e4e4,
+  1650: #999,
+  1700: #000,
+  1800: #fdf7f7,
+  1900: #e9eefe,
+  2000: #e9ebf1,
+  2500: #7d7d7d
+);
+
+$break-point: rem(992px);
+$media-lg: rem(992px);
+$media-md: rem(768px);
+$media-sm: rem(576px);

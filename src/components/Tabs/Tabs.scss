@@ -1,0 +1,36 @@
+@import 'sass-rem';
+@import 'assets/variables';
+
+.tabs {
+  &__back {
+    margin: auto;
+  }
+
+  .navigation-buttons {
+    padding: rem(20px) rem(5px);
+    padding-right: rem(15px);
+
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__buttons__back:not(.inactive),
+    &__buttons__next {
+      display: flex;
+      font-size: rem(17px);
+      color: map-get($palette, primary);
+    }
+
+    &__buttons__back {
+      display: flex;
+      background-color: unset;
+      font-size: rem(17px);
+      border-style: none;
+    }
+
+    &__buttons__next {
+      width: fit-content;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The button component adds an active class to the button when isActive props is passed 1`] = `ReactWrapper {}`;
+
+exports[`The button component displays a button with classes "button regular hollow" when mounted with no configuration props 1`] = `ReactWrapper {}`;
+
+exports[`The button component displays an image if the icon prop is passed 1`] = `ReactWrapper {}`;
+
+exports[`The button component overwrites type and size props when values are provided 1`] = `ReactWrapper {}`;

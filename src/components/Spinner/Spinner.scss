@@ -1,0 +1,21 @@
+@import 'sass-rem';
+@import 'assets/variables';
+
+.spinner {
+  vertical-align: text-bottom;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 0.25rem solid currentColor;
+  border-radius: 50%;
+  border-right-color: transparent;
+  -webkit-animation: spin 0.75s linear infinite;
+  animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

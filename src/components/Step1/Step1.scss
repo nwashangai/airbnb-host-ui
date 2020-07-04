@@ -1,0 +1,203 @@
+@import 'sass-rem';
+@import 'assets/variables';
+
+.step1 {
+  padding: rem(8px);
+  font-size: rem(19px);
+
+  &__title {
+    margin-bottom: rem(5px);
+    padding: rem(20px) 0;
+    font-size: rem(27px);
+    font-weight: bold;
+  }
+
+  &__select {
+    width: 66.66%;
+
+    &--full {
+      width: 100%;
+      padding-right: rem(10px);
+    }
+  }
+
+  &__instruction {
+    margin-bottom: rem(32px);
+    font-size: rem(18px);
+    color: map-get($palette, font);
+  }
+
+  &__item-counter-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(40px);
+    font-size: rem(18px);
+  }
+
+  &__item {
+    width: fit-content;
+    margin-right: rem(25px);
+    padding: rem(8px) 0;
+    font-weight: bold;
+  }
+
+  &__bedrooms {
+    margin-bottom: rem(32px);
+  }
+
+  &__bedrooms-text,
+  &__beds-text {
+    margin-bottom: rem(10px);
+    font-size: rem(20px);
+    color: map-get($palette, input);
+  }
+
+  &__panel-title {
+    padding: rem(18px) 0 rem(30px);
+  }
+
+  &__arrangement-desc {
+    margin-top: rem(-20px);
+    margin-bottom: rem(20px);
+
+    span {
+      margin: 0;
+      font-size: rem(17px);
+      font-weight: 400;
+      line-height: 1.375rem;
+      overflow-wrap: break-word;
+    }
+  }
+
+  &__page-container-full {
+    width: auto;
+  }
+
+  &__page-container-full::before,
+  &__page-container-full::after {
+    display: table;
+    content: ' ';
+  }
+
+  &__bed-control {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__details {
+    width: 50%;
+  }
+
+  &__common-space {
+    margin: 0;
+    font-size: rem(20px);
+  }
+
+  &__common-space,
+  &__bed-count {
+    padding: rem(4px) 0;
+  }
+
+  &__bed-control-btn {
+    vertical-align: middle;
+    display: inline-block;
+    background: map-get($grey, 150);
+    margin-bottom: 0;
+    padding: rem(9px) rem(27px);
+    border: rem(1px) solid map-get($grey, 200);
+    border-radius: rem(4px);
+    font-size: rem(18px);
+    font-weight: bold;
+    line-height: 1.43;
+    text-align: center;
+    cursor: pointer;
+    color: map-get($palette, font);
+    user-select: none;
+    white-space: nowrap;
+  }
+
+  &__add-bed {
+    margin-bottom: rem(20px) !important;
+  }
+
+  &__bed-count {
+    color: map-get($grey, 1400);
+  }
+
+  &__add-beds-main {
+    display: none;
+
+    &--show {
+      display: block;
+    }
+  }
+
+  .bed-details-container {
+    padding-top: rem(28px);
+    border-top: rem(1px) solid map-get($palette, tertiary);
+    border-bottom: rem(1px) solid map-get($palette, tertiary);
+  }
+
+  .bed-detail-item-summary {
+    min-height: rem(28px);
+    padding-bottom: rem(28px);
+  }
+
+  .no-margin-padding {
+    margin: 0;
+    padding: 0;
+    font-size: rem(26px);
+  }
+
+  .no-padding-h {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .Dropdown-root {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    border-radius: rem(8px);
+    font-size: rem(16px);
+    font-weight: 400;
+    line-height: rem(20px);
+    box-shadow: map-get($palette, border-shadow) 0 0 0 rem(1px) inset;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+  }
+
+  .Dropdown-control {
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: rem(20px) rem(36px) rem(20px) rem(12px);
+    font-size: rem(19px);
+    border-style: none;
+    outline: none;
+  }
+
+  .Dropdown-arrow {
+    position: absolute;
+    top: 45%;
+    right: rem(10px);
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top: -ceil(2.5);
+    content: ' ';
+    border-color: map-get($palette, placeholder) transparent transparent;
+    border-style: solid;
+    border-width: rem(10px) rem(10px) 0;
+  }
+
+  .bed-detail {
+    display: none;
+
+    &--show {
+      display: block;
+    }
+  }
+}

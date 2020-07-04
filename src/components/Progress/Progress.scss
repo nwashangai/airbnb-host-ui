@@ -1,0 +1,14 @@
+@import 'sass-rem';
+@import 'assets/variables';
+
+.progress {
+  background-color: map-get($palette, progress-bg);
+  width: 100%;
+  height: rem(10px);
+
+  &__current {
+    background-color: map-get($palette, primary);
+    border-top-right-radius: rem(7px);
+    border-bottom-right-radius: rem(7px);
+  }
+}
